@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		794D96D92774E07C001E5FA7 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 794D96D82774E07C001E5FA7 /* BaseViewController.swift */; };
+		794D96DB2774E0AB001E5FA7 /* RegistrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 794D96DA2774E0AB001E5FA7 /* RegistrationViewController.swift */; };
+		794D96DD2774E0C3001E5FA7 /* TaskListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 794D96DC2774E0C3001E5FA7 /* TaskListViewController.swift */; };
+		794D96DF2774E0CF001E5FA7 /* TaskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 794D96DE2774E0CF001E5FA7 /* TaskViewController.swift */; };
+		794D96E12774E15D001E5FA7 /* Credentials.swift in Sources */ = {isa = PBXBuildFile; fileRef = 794D96E02774E15D001E5FA7 /* Credentials.swift */; };
 		79F72EC62763EC150032D047 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79F72EC52763EC150032D047 /* AppDelegate.swift */; };
 		79F72EC82763EC150032D047 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79F72EC72763EC150032D047 /* SceneDelegate.swift */; };
 		79F72ECA2763EC150032D047 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79F72EC92763EC150032D047 /* ViewController.swift */; };
@@ -36,6 +41,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		794D96D82774E07C001E5FA7 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		794D96DA2774E0AB001E5FA7 /* RegistrationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewController.swift; sourceTree = "<group>"; };
+		794D96DC2774E0C3001E5FA7 /* TaskListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskListViewController.swift; sourceTree = "<group>"; };
+		794D96DE2774E0CF001E5FA7 /* TaskViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskViewController.swift; sourceTree = "<group>"; };
+		794D96E02774E15D001E5FA7 /* Credentials.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Credentials.swift; sourceTree = "<group>"; };
 		79F72EC22763EC150032D047 /* Todoist.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Todoist.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		79F72EC52763EC150032D047 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		79F72EC72763EC150032D047 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -76,6 +86,33 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		794D96D52774C9E0001E5FA7 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				794D96E02774E15D001E5FA7 /* Credentials.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		794D96D62774DFD0001E5FA7 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				79F72EC92763EC150032D047 /* ViewController.swift */,
+				794D96D82774E07C001E5FA7 /* BaseViewController.swift */,
+				794D96DA2774E0AB001E5FA7 /* RegistrationViewController.swift */,
+				794D96DC2774E0C3001E5FA7 /* TaskListViewController.swift */,
+				794D96DE2774E0CF001E5FA7 /* TaskViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		794D96D72774DFE1001E5FA7 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
 		79F72EB92763EC150032D047 = {
 			isa = PBXGroup;
 			children = (
@@ -99,9 +136,11 @@
 		79F72EC42763EC150032D047 /* Todoist */ = {
 			isa = PBXGroup;
 			children = (
+				794D96D72774DFE1001E5FA7 /* Controllers */,
+				794D96D62774DFD0001E5FA7 /* ViewControllers */,
+				794D96D52774C9E0001E5FA7 /* Models */,
 				79F72EC52763EC150032D047 /* AppDelegate.swift */,
 				79F72EC72763EC150032D047 /* SceneDelegate.swift */,
-				79F72EC92763EC150032D047 /* ViewController.swift */,
 				79F72ECB2763EC150032D047 /* Main.storyboard */,
 				79F72ECE2763EC180032D047 /* Assets.xcassets */,
 				79F72ED02763EC180032D047 /* LaunchScreen.storyboard */,
@@ -258,7 +297,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				794D96DD2774E0C3001E5FA7 /* TaskListViewController.swift in Sources */,
+				794D96DB2774E0AB001E5FA7 /* RegistrationViewController.swift in Sources */,
+				794D96D92774E07C001E5FA7 /* BaseViewController.swift in Sources */,
+				794D96E12774E15D001E5FA7 /* Credentials.swift in Sources */,
 				79F72ECA2763EC150032D047 /* ViewController.swift in Sources */,
+				794D96DF2774E0CF001E5FA7 /* TaskViewController.swift in Sources */,
 				79F72EC62763EC150032D047 /* AppDelegate.swift in Sources */,
 				79F72EC82763EC150032D047 /* SceneDelegate.swift in Sources */,
 			);
@@ -437,6 +481,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 77LUNS28BG;
@@ -465,6 +510,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 77LUNS28BG;
